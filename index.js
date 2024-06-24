@@ -18,7 +18,6 @@ io.on("connection", (socket) => {
       socketIds.push(socket.id);
       socket.emit("new user", { success: true });
 
-      //Emit para os outros usuários dizendo que tem um novo usuário ativo.
       //socket.broadcast.emit("hello", "world");
     }
   });
